@@ -21,6 +21,7 @@ app.use(express.json());
 // CORS implemented so that we don't get errors when trying to access the server from a different server location
 //app.use(cors());
 
+app.get('/test', (req, res) => {      res.status(200).send({mensaje:"RESPUESTA OK "}); });
 
 /*const { createProxyMiddleware } = require('http-proxy-middleware');
 app.use('/api', createProxyMiddleware({ 
